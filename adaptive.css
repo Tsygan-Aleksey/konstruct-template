@@ -1,0 +1,117 @@
+@media (max-width:1200px){
+    .social{
+        display: none;
+    }
+    .header__max-width{
+        max-width: 970px;
+    }
+    section>div:not(.header__overlay, .stylish__overlay), header>div, footer>div{
+        max-width: 970px;
+    }
+    .form-contactus__input-container{
+        margin-right: 15%;
+    }
+}
+@media (max-width:992px){
+    .header__max-width{
+        max-width: 750px;
+
+    }
+    .header__container{
+        margin-right: 15%;
+    }
+    .block-heading__title{
+        font-size: 25px;
+    }
+    section>div:not(.header__overlay, .stylish__overlay), header>div, footer>div{
+        max-width: 750px;
+    }
+    .features__imagetown{
+        display: none;
+    }
+    .people-comment__text{
+        padding: 0px;
+    }
+    .form-contactus__input-container{
+        margin-right: 15%;
+    }
+    .form-contactus__input-container input{
+        width: 250px;
+    }
+}
+@media (max-width:767px){
+    .header, .header__overlay{
+        height: 100%;
+    }
+    .header__max-width{
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .header__container{
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header__button{
+        margin-bottom: 5%;
+    }
+    section>div:not(.header__overlay, .stylish__overlay), header>div, footer>div{
+        max-width: none;
+    }
+    .features__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-square{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+
+    }
+    .block-features, .people-comment, .square-tab, .people-comment:nth-child(2),.form-contactus__message, .form-contactus, .container-square, .container-form-freetreal, .skill__subtitle, .header__information,.header__button{
+        margin: 5%;
+    }
+    .comment__commentators, .process__skills{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-contactus__container, .block-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .form-contactus__input-container, .block-skill__subtitle_margincenter{
+        margin: 0;
+    }
+    .form-contactus__message{
+        width: 100%;
+    }
+    .container-form-freetreal{
+        width: 100%;
+    }
+    .block-heading__subtitle{
+        text-align: center;
+    }
+    .block-skill__subtitle{
+        width: 100%;
+    }
+    .navigation__links-all{
+        display: none;
+    }
+    .navigation__menu{
+        display: block;
+    }
+    .navigation__menu{
+        margin-right: 5%;
+    }
+    .navigation__text-axit{
+        margin-left: 5%;
+    }
+}

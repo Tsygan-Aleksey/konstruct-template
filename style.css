@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 1182px;
+    width: 1182px;
 
 }
 .navigation__container a{
@@ -36,6 +36,9 @@
     align-items: center;
     justify-content: center;
     /*padding-right: 108px;*/
+}
+.navigation__menu{
+    display: none;
 }
 .navigation__links-all a{
     margin: 0px 24px;
@@ -62,10 +65,11 @@
     background-size: cover;
 }
 .header__overlay{
-    /*width: 1400px;*/
-    padding-top: 108px;
     height: 600px;
     background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
@@ -76,7 +80,9 @@
     justify-content: space-between;
     align-content: center;
 }
-
+.header__container{
+    margin-right: 265px;
+}
 .header__information{
     display: flex;
     align-items: start;
@@ -240,7 +246,7 @@
 
 }
 .features__container{
-    min-width: 1182px;
+    max-width: 1182px;
     margin: auto;
     display: flex;
     align-items: start;
@@ -311,7 +317,7 @@
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    width: 572px;
+    max-width: 572px;
     color: #86878B;
     margin: 58px 0px 89px 0px;
 }
@@ -349,13 +355,12 @@
     height: 253px;
     margin-top: 100px;
 }
-.process{
-    /*width: 1400px;*/
-    min-width: 1182px;
+.process__container{
+    max-width: 1182px;
     margin: auto;
-    height: 600px;
-    padding-top: 80px;
-    padding-bottom: ;
+    margin-top: 80px;
+    margin-bottom: 116px;
+
 }
 .process__head{
     display: flex;
@@ -364,8 +369,7 @@
 }
 
 .block-heading__title_wight-header{
-    width: 544px;
-
+    max-width: 544px;
 }
 .block-heading {
     display: flex;
@@ -427,16 +431,21 @@
 .block-heading__subtitle_margineverywhere{
     margin: 34px 0px 0px 0px;
 }
-.process__container{
+.process__skills{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 0 1 33.33%;
 }
 .block-skill{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+}
+.block-skill:nth-child(2){
+    margin: 0px 29px;
 }
 .block-skill__image{
     width: 70px;
@@ -456,7 +465,6 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
-    height: 29px;
     color: #333333;
     margin: 30px 0px 16px 0px;
 }
@@ -467,7 +475,7 @@
     font-size: 14px;
     line-height: 19px;
     text-align: center;
-    width: 350px;
+    max-width: 350px;
     color: #000000;
 }
 .block-skill__subtitle_margincenter{
@@ -475,13 +483,13 @@
 }
 .price{
     /*width: 1400px;*/
-    height: 800px;
+
     background: #F5F5F5;
     padding-top: 80px;
 
 }
 .price__container{
-    min-width: 1182px;
+    max-width: 1182px;
     margin: auto;
 }
 .price__head{
@@ -493,13 +501,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 0 1 33.33%;
 }
 .price__cost table{
     border-collapse: collapse;
     box-sizing: border-box;
     padding: 0;
-    width: 340px;
     margin-top: 62px;
+    width: 100%;
 }
 .price__cost table:nth-child(even){
     margin: 47px 77px 0px 78px;
@@ -566,10 +575,13 @@
 }
 .comment{
     /*width: 1400px;*/
+
+}
+.comment__container{
     margin: auto;
-    min-width: 1182px;
-    height: 600px;
-    padding-top: 80px;
+    max-width: 1182px;
+    margin-top: 80px;
+    margin-bottom: 119px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -581,9 +593,6 @@
     justify-content: center;
 }
 .people-comment__text{
-    width: 298px;
-    height: 110px;
-
     background: #E2E2E2;
     border-radius: 7px;
     display: flex;
@@ -597,19 +606,21 @@
     letter-spacing: 0em;
     text-align:center;
     color: #86878B;
+    box-sizing: border-box;
+    padding: 30px;
 
 }
 .comment__commentators{
     display: flex;
     justify-content: space-between;
     margin-top: 67px;
-    width: 1102px;
-
-
+    flex: 0 1 33.33%;
+}
+.people-comment:nth-child(2){
+    margin: 0px 105px;
 }
 .people-comment__who{
-    width: 298px;
-    height: 70px;
+    max-width: 298px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -625,8 +636,6 @@
     width: 70px;
 }
 .people-comment__name{
-    width: 97px;
-    height: 27px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -648,31 +657,25 @@
     text-align: right;
 }
 .stylish{
-    /*width: 1400px;*/
     height: 326px;
     background: url("images/background.png") no-repeat center;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+   }
 .stylish__overlay{
-
     height: 325px;
     background: rgba(0, 0, 0, 0.5);
-
-    padding-top: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .stylish__container{
-    min-width: 1182px;
+    max-width: 1182px;
     margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .contactUS{
-    /*width: 1400px;*/
-    height: 700px;
     padding-top: 80px;
 }
 .contact__container{
@@ -680,41 +683,27 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    min-width: 1182px;
+    max-width: 1182px;
+    margin-bottom: 55px;
 }
 .form-contactus{
     display: flex;
     align-items: center;
-    justify-content: end;
     flex-direction: column;
+    margin-top: 95px;
 }
 .form-contactus__container{
     display: flex;
-    width: 1400px;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    width: 100%;
 }
 
-.contactUS__form{
-    color: #BDBDBD;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    margin-top: 95px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: end;
-
-}
 .form-contactus__input-container{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 478px;
+    margin-right: 222px;
+
 
 }
 .form-contactus__input-container input{
@@ -722,6 +711,9 @@
     border: none;
     border-bottom: 1px solid #BDBDBD;
     height: 60px;
+    width: 478px;
+
+
 }
 .form-contactus__input-container input::placeholder{
     font-family: Open Sans;
@@ -732,9 +724,6 @@
     letter-spacing: 0em;
     text-align: left;
     color: #BDBDBD;
-
-    height: 52px;
-
 }
 .form-contactus__message{
     display: flex;
@@ -755,8 +744,7 @@
 .form-contactus__message textarea{
     height: 248px;
     outline: none;
-        resize: none;
-    width: 478px;
+    resize: none;
     border: 0px;
     border-bottom: 1px solid #BDBDBD;
 }
@@ -772,7 +760,7 @@
 }
 .footer__container{
     margin: auto;
-    min-width: 1182px;
+    max-width: 1182px;
     display: flex;
     flex-direction: column;
     align-items: center;
