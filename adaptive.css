@@ -130,4 +130,7 @@
     .navigation__text-axit{
         margin-left: 5%;
     }
+    .price__cost{
+        flex-direction: column;
+    }
 }
